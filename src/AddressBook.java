@@ -21,11 +21,12 @@ public class AddressBook {
     }
 
     //removeBuddy    remove the friend from the list by using a valid index number
-    public void removeBuddy(int indexNum){
-        if(indexNum<0 && indexNum>friendList.size()){
-            System.out.println("Invalid index number");
+    public void removeBuddy(BuddyInfo toRemove){
+        for(BuddyInfo friend : friendList){
+            if(friend.equals(toRemove)){
+                friendList.remove(friend);
+            }
         }
-        friendList.remove(indexNum);
     }
 
     //main
