@@ -22,11 +22,11 @@ public class AddressBook {
 
     //removeBuddy    remove the friend from the list by using a valid index number
     public void removeBuddy(BuddyInfo toRemove){
-        for(BuddyInfo friend : friendList){
-            if(friend.equals(toRemove)){
-                friendList.remove(friend);
-            }
-        }
+        //for(BuddyInfo friend : friendList){
+            //if(friend.equals(toRemove)){
+                friendList.remove(toRemove);
+            //}
+        //}
     }
 
     //main
@@ -37,5 +37,8 @@ public class AddressBook {
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
         addressBook.removeBuddy(buddy);
+        System.out.println("hello");
     }
 }
+
+//github repository: https://github.com/Khishere/SYSC3110_lab3_repository.git
