@@ -29,6 +29,11 @@ public class AddressBook {
         //}
     }
 
+    //new method printStuffs()
+    public static void printStuffs(){
+        System.out.println("Method included for branching!");
+    }
+
     //main
     public static void main(String[] args){
         System.out.println("Address Book");
@@ -38,6 +43,7 @@ public class AddressBook {
         addressBook.addBuddy(buddy);
         addressBook.removeBuddy(buddy);
         System.out.println("hello");
+        printStuffs(); // wtf? what is goin on? Last try LULW
     }
 }
 
