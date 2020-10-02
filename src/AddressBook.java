@@ -43,7 +43,7 @@ public class AddressBook {
         addressBook.addBuddy(buddy);
         addressBook.removeBuddy(buddy);
         System.out.println("hello");
-        printStuffs(); // wtf? what is goin on? Last try LULW
+        printStuffs(); // new after branching
     }
 }
 
